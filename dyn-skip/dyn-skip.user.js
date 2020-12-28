@@ -1,6 +1,15 @@
-twitch-videoad.js application/javascript
+// ==UserScript==
+// @name         TwitchAdSolutions
+// @namespace    https://github.com/pixeltris/TwitchAdSolutions
+// @version      1.0
+// @description  Multiple solutions for blocking Twitch ads
+// @author       pixeltris
+// @match        *://*.twitch.tv/*
+// @run-at       document-start
+// @grant        none
+// ==/UserScript==
 (function() {
-    if ( /(^|\.)twitch\.tv$/.test(document.location.hostname) === false ) { return; }
+    'use strict';
     function declareOptions(scope) {
         // Options / globals
         scope.OPT_MODE_MUTE_BLACK = true;
